@@ -1,4 +1,4 @@
-# items()方法返回一个键-值对列表
+# items()方法返回一个键-值对列表 [Python3 是一个视图对象 dict_items(内存占用更小)]
 
 user_0 = {'username': 'efermi',
           'first': 'enrico',
@@ -30,7 +30,7 @@ for name, language in favorite_languages.items():
 print()
 
 
-# keys()方法 返回一个包含所有键的 "列表"
+# keys()方法 返回一个包含所有键的 "列表"  [Python3 是一个视图对象 dict_keys(内存占用更小)]
 # TODO .keys()返回类型为 dict_keys!
 
 # 遍历字典的所有键, 利用sorted函数对键进行排序
@@ -38,7 +38,7 @@ for name in sorted(favorite_languages.keys()):
     print(name.title() + ", thank you for taking the poll.")
 
 
-# values()方法 返回一个值的 列表,  dict_values
+# values()方法 返回一个值的 "列表" [Python3 是一个视图对象 dict_values(内存占用更小)]
 # 遍历字典的所有值
 print("\nThe following languages have been mentioned:")
 for language in favorite_languages.values():
