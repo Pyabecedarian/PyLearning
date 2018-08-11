@@ -7,8 +7,8 @@
 
 # import S9_类.S9_01_Car类 as c_Car
 # import S9_类.S9_05_Battery类_实例作属性 as c_Battery
-from S9_类.S9_01_Car类 import Car
-from S9_类.S9_05_Battery类_实例作属性 import Battery
+from S09_类.S9_01_Car类 import Car
+from S09_类.S9_05_Battery类_实例作属性 import Battery
 
 
 class ElectricCar(Car):

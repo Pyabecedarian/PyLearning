@@ -6,7 +6,7 @@
 """
 
 # 导入Car类
-import S9_类.S9_01_Car类 as Class_Car
+import S09_类.S9_01_Car类 as Class_Car
 
 
 class ElectricCar(Class_Car.Car):

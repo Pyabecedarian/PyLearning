@@ -1,6 +1,6 @@
 # as 给模块取别名
 
-import S8_函数.functions_ as f
+import S08_函数.functions_ as f
 
 f_name = f.get_formatted_name('albert', 'einstein')
 print(f_name)

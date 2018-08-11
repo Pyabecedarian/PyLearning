@@ -13,7 +13,7 @@
 """
 
 # as 给函数取别名
-from S8_函数.functions_ import get_formatted_name as gfn
+from S08_函数.functions_ import get_formatted_name as gfn
 
 fm_name = gfn("albert", 'einstein')
 print(fm_name)

@@ -14,7 +14,7 @@ module_name.function_name()
 
 
 # 导入functions.py中的所有内容
-import S8_函数.functions_
+import S08_函数.functions_
 
 # 调用make_pizza函数
 S8_函数.functions_.make_pizza(12, 'mushroom', 'pepperoni',

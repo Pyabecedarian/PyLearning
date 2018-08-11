@@ -11,7 +11,7 @@ func_name(arg_1 = sth, arg_2 = sth ...)
 """
 
 # 导入模块
-import S8_函数.functions_
+import S08_函数.functions_
 
 # 关键字实参调用可以忽略形参的位置
 S8_函数.functions_.describe_pet(pet_name='harry', animal_type='mouse')

@@ -3,7 +3,7 @@
 
 
 # *在一个模块中导入另一个模块*
-from S9_类.ElectricCar import ElectricCar, Car
+from S09_类.ElectricCar import ElectricCar, Car
 
 
 # 实例化电动汽车

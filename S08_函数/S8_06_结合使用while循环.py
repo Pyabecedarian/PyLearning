@@ -4,7 +4,7 @@
 导入 get_formatted_name 函数
 """
 
-import S8_函数.functions_
+import S08_函数.functions_
 
 while True:
 

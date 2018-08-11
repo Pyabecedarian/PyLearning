@@ -1,4 +1,4 @@
-import S9_类.S9_01_Car类 as Class_Car
+import S09_类.S9_01_Car类 as Class_Car
 
 # 创建对象
 my_car = Class_Car.Car('audi', 'a4', 2016)
