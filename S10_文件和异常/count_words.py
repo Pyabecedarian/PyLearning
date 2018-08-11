@@ -6,7 +6,7 @@ def count_words(filename):
     :return:
     """
     try:
-        with open(filename) as f_obj:
+        with open(filename, encoding='gb18030', errors='ignore') as f_obj:
             contents = f_obj.read()
     except FileNotFoundError:
         print("Sorry, the file " + filename + " does not exist.")
@@ -15,3 +15,4 @@ def count_words(filename):
         num_words = len(words)
         print("The file " + filename + " has about " +
               str(num_words) + " words.")
+
