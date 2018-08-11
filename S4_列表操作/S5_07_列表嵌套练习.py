@@ -17,8 +17,8 @@ while i < 8:
 
 # 1>. 完成随机分配, 将老师随机分配到某个办公室中
 for teacher in teachers:
-    i = randint(0, (len(offices)-1))
-    office = offices[i]
+    rand_index = randint(0, (len(offices)-1))
+    office = offices[rand_index]
     office.append(teacher)
 
 print(offices)
