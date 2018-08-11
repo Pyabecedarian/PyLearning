@@ -15,7 +15,7 @@
 windows中路径使用backslash(\)隔开, 而python将其视为转义字符
 因此应采用\\而不是\, 否则将会报错
 """
-# file_path = 'C:\\Users\\Liu-q\\OneDrive\\Documents\\myProject\\S10_文件和异常\\pi_digits.txt'
+# file_path = 'C:\\xxx\\S10_文件和异常\\pi_digits.txt'
 #
 # with open(file_path) as file_object:
 #     contents = file_object.read()
@@ -26,7 +26,7 @@ windows中路径使用backslash(\)隔开, 而python将其视为转义字符
 逐行读取文件
 """
 
-# filename = 'pi_digits.txt'
+filename = 'pi_digits.txt'
 # with open(filename) as file_object:
 #     for line in file_object:
 #         print(line.rstrip())
@@ -63,8 +63,6 @@ windows中路径使用backslash(\)隔开, 而python将其视为转义字符
 读取pi小数点后100万, 存入字符串中,并打印
 
 pi_million_digits.txt
-
-"你的生日在pi中吗??"
 """
 
 file_name = "pi_million_digits.txt"
