@@ -12,8 +12,8 @@
 # print()
 # 绝对路径
 """
-windows中路径使用backslash(\)隔开, 而python将其视为转义字符
-因此应采用\\而不是\, 否则将会报错
+windows中路径使用backslash('\')隔开, 而python将其视为转义字符
+因此应采用'\\'而不是'\', 否则将会报错
 """
 # file_path = 'C:\\xxx\\S10_文件和异常\\pi_digits.txt'
 #
