@@ -1,18 +1,17 @@
-def count_words(filename):
+def count_words(f_name):
     """
     读取文本文件, 计算文件中包含单词的个数
 
-    :param filename: 文件名
-    :return:
+    :param f_name: 文件名
     """
+
     try:
-        with open(filename, encoding='gb18030', errors='ignore') as f_obj:
+        with open(f_name, encoding='gb18030', errors='ignore') as f_obj:
             contents = f_obj.read()
     except FileNotFoundError:
-        print("Sorry, the file " + filename + " does not exist.")
+        print("Sorry, the file " + f_name + " does not exist.")
     else:
         words = contents.split()
         num_words = len(words)
-        print("The file " + filename + " has about " +
+        print("The file " + f_name + " has about " +
               str(num_words) + " words.")
-

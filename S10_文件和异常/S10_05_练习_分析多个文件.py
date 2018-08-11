@@ -12,7 +12,3 @@ file_names = ['Alice in Wonderland.txt', 'Siddhartha.txt',
 
 for file_name in file_names:
     count_words(file_name)
-
-
-# TODO An error occurred while try to
-# TODO count words of 'Little women.txt'

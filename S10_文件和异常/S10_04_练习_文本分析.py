@@ -15,6 +15,7 @@ try:
     with open(file_name) as file_object:
         contents = file_object.read()
 except FileNotFoundError:
+    # pass  # 占位符/  失败时一声不吭
     msg = "Sorry, the file " + file_name + " does not exist."
     print(msg)
 else:

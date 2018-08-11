@@ -25,7 +25,7 @@ while flag:
             break
         except ValueError:
             print("Please enter an integer number!")
-            continue
+
     if not flag:
         break
 
@@ -40,7 +40,7 @@ while flag:
             break
         except ValueError:
             print("Please enter an integer number!")
-            continue
+
     if not flag:
         break
 
@@ -56,3 +56,10 @@ while flag:
         repeat = input("Wanna try again? (yes / no): ")
         if repeat.lower() == 'no':
             flag = False
+
+
+"""
+注: 只要程序依赖于外部因素, 如 用户输入, 存在指定的文件, 有无网络链接,
+等等, 就可能出现异常. 凭经验可判断该在程序的什么地方包含异常处理块, 
+以及出现错误时该向用户提供多少相关的信息
+"""
