@@ -17,7 +17,7 @@
 
 
 # 'w'模式 写入文件
-file_name = 'programming'
+file_name = 'programming.txt'
 with open(file_name, 'w') as file_object:
 
     # write()不会在文本末尾自动换行
@@ -25,7 +25,7 @@ with open(file_name, 'w') as file_object:
 
 
 # 'a'模式 附加文件
-file_name = 'programming'
+file_name = 'programming.txt'
 with open(file_name, 'a') as file_object:
     file_object.write('I also love artificial intelligence.\n')
     file_object.write("I'll be an expert in machine learning.\n")
