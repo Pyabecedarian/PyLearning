@@ -17,5 +17,4 @@ module_name.function_name()
 import S08_函数.functions_
 
 # 调用make_pizza函数
-S8_函数.functions_.make_pizza(12, 'mushroom', 'pepperoni',
-                            'extra cheese')
+S08_函数.functions_.make_pizza(12, 'mushroom', 'pepperoni', 'extra cheese')
