@@ -49,6 +49,8 @@ def get_new_usrname():
     file_name = 'usrname.json'
     with open(file_name, 'w') as f_obj:
         json.dump(usrname, f_obj)
+        print("We'll remember you when you come back, " +
+              usrname + '.')
 
     return usrname
 
@@ -59,7 +61,13 @@ def greet_user():
     usrname = get_stored_usrname()
 
     if usrname:
-        print("Welcome back, " + usrname)
+        print("Your name is " + usrname)
+        usr_check = input("enter 'yes' to confirm, "
+                          "'no' to enter a new name.")
+        if usr_check.lower() == 'yes':
+            print("Welcome back, " + usrname)
+        else:
+            usrname = get_new_usrname()
     else:
         usrname = get_new_usrname()
         print("We'll remember you when you come back, " +
