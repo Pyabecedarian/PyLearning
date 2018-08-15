@@ -82,7 +82,6 @@ def add_id(id_list):
 def header():
     """print header"""
 
-    print("功能: 显示全部")
     print("\n姓名\t\t\t\t电话\t\t\t\tQQ\t\t\t\t邮箱")
     print("=" * 66)
 
@@ -95,10 +94,7 @@ def show_all(id_list):
         header()
         # 打印列表
         for id_dict in id_list:
-            print(id_dict['name'] + '\t\t\t', end='')
-            print(id_dict['phone'] + '\t\t\t\t', end='')
-            print(id_dict['qq'] + '\t\t\t\t', end='')
-            print(id_dict['email'])
+            show_info(id_dict)
         print("-" * 66)
     else:
         print("提示: 没有任何名片记录")
@@ -125,6 +121,10 @@ def edit_id(find_name, id_dict, id_list):
     # Refresh file list
     refresh_file(id_list)
 
+    header()
+    show_info(id_dict)
+    print('-' * 66)
+
 
 def delete_id(find_name, id_dict, id_list):
     """delete info"""
@@ -145,6 +145,10 @@ def search_info(id_list):
         # 如果找到
         if find_name == id_dict['name']:
             while True:
+                header()
+                show_info(id_dict)
+                print("-" * 66)
+
                 msg = "请输入对名片的操作: 1.修改 / 2.删除 / 0.返回上一级"
                 usr_cmd = input(msg)
                 if usr_cmd == '1':
@@ -176,3 +180,12 @@ def refresh_file(id_list):
                 f_obj.write('phone %s\n' % id_dict['phone'])
                 f_obj.write('qq %s\n' % id_dict['qq'])
                 f_obj.write('email %s\n' % id_dict['email'])
+
+
+def show_info(id_dict):
+    """显示一个ID"""
+
+    print(id_dict['name'] + '\t\t\t', end='')
+    print(id_dict['phone'] + '\t\t\t\t', end='')
+    print(id_dict['qq'] + '\t\t\t\t', end='')
+    print(id_dict['email'])
